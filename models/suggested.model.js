@@ -6,7 +6,7 @@ const courseSchema = new Schema({
   course_description: {type: String, required: true},
   category: {type: String, required: true},
   link: {type: String, required: true},
-  thumbnail: {type: String, required: true},
+  cover_image: {type: String, required: true},
   rating: {type: Number, required: true},
   favorites: {type: Number, required: true},
   user_image: {type: String, required: true},

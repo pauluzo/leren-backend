@@ -12,15 +12,16 @@ const detailsSchema = new Schema({
 });
 
 const courseSchema = new Schema({
-  course_name: {type: String, required: true},
-  course_description: {type: String, required: true},
-  category: {type: String, required: true},
-  link: {type: String, required: true},
-  thumbnail: {type: String, required: true},
-  rating: {type: Number, required: true},
-  favorites: {type: Number, required: true},
-  user_image: {type: String, required: true},
-  user_name: {type: String, required: true},
+  course_name: {type: String},
+  course_description: {type: String},
+  category: {type: String},
+  link: {type: String},
+  cover_image: {type: String},
+  rates_number: {type: Number, default: 0},
+  rating: {type: Number},
+  favorites: {type: Number},
+  user_image: {type: String},
+  user_name: {type: String},
 }, {
   timestamps: true,
 })
